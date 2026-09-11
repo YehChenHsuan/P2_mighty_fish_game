@@ -1,14 +1,15 @@
 /**
- * ALICE ESL Phonics P2 - Mighty Fish 3D 海底探險題庫資料
- * 課本學習範圍：Page 04 - 10
+ * ALICE ESL Phonics P2 - 大魚吃小魚英文冒險題庫 (data.js)
+ * 課本學習範圍：Page 04 - 09
  * 主題：Daily Activities, Beginning Sounds & Short Vowels
  */
 
-const P2_FISH_QUESTIONS = [
+window.BOOK_ID = "P2";
+const FISH_QUESTIONS = [
   {
     "id": "fish-qa-1",
     "type": "QA",
-    "source": "ALICE ESL Phonics P2 Page 04 - 10",
+    "source": "ALICE ESL Phonics P2 Page 04 - 09",
     "questionEn": "Can you brush your teeth?",
     "questionZh": "你會刷牙嗎？",
     "speechText": "Can you brush your teeth?",
@@ -19,28 +20,28 @@ const P2_FISH_QUESTIONS = [
     ],
     "correct": "Yes, I can.",
     "audioFallback": "P2_flashcards_audios/P2_brush.mp3",
-    "voiceType": "speech"
+    "theme": "Daily Activities, Beginning Sounds & Short Vowels"
   },
   {
     "id": "fish-qa-2",
     "type": "QA",
-    "source": "ALICE ESL Phonics P2 Page 04 - 10",
-    "questionEn": "Can Josh wake up at six?",
-    "questionZh": "Josh 六點能起床嗎？",
-    "speechText": "Can Josh wake up at six?",
+    "source": "ALICE ESL Phonics P2 Page 04 - 09",
+    "questionEn": "Do you take the bus to school?",
+    "questionZh": "你搭公車去上學嗎？",
+    "speechText": "Do you take the bus to school?",
     "options": [
-      "Yes, he can.",
-      "No, he can't.",
-      "Yes, he fly."
+      "Yes, I do.",
+      "No, I don't.",
+      "Yes, I can."
     ],
-    "correct": "Yes, he can.",
-    "audioFallback": "P2_flashcards_audios/P2_bed.mp3",
-    "voiceType": "speech"
+    "correct": "Yes, I do.",
+    "audioFallback": "P2_flashcards_audios/P2_bus.mp3",
+    "theme": "Daily Activities, Beginning Sounds & Short Vowels"
   },
   {
     "id": "fish-qa-3",
     "type": "QA",
-    "source": "ALICE ESL Phonics P2 Page 04 - 10",
+    "source": "ALICE ESL Phonics P2 Page 04 - 09",
     "questionEn": "Which word begins with Bb?",
     "questionZh": "哪一個單字是 Bb 開頭？",
     "speechText": "Which word begins with Bb?",
@@ -51,12 +52,12 @@ const P2_FISH_QUESTIONS = [
     ],
     "correct": "bed",
     "audioFallback": "P2_flashcards_audios/P2_bed.mp3",
-    "voiceType": "speech"
+    "theme": "Daily Activities, Beginning Sounds & Short Vowels"
   },
   {
     "id": "fish-qa-4",
     "type": "QA",
-    "source": "ALICE ESL Phonics P2 Page 04 - 10",
+    "source": "ALICE ESL Phonics P2 Page 04 - 09",
     "questionEn": "Which word begins with Tt?",
     "questionZh": "哪一個單字是 Tt 開頭？",
     "speechText": "Which word begins with Tt?",
@@ -67,12 +68,12 @@ const P2_FISH_QUESTIONS = [
     ],
     "correct": "teeth",
     "audioFallback": "P2_flashcards_audios/P2_teeth.mp3",
-    "voiceType": "speech"
+    "theme": "Daily Activities, Beginning Sounds & Short Vowels"
   },
   {
     "id": "fish-qa-5",
     "type": "QA",
-    "source": "ALICE ESL Phonics P2 Page 04 - 10",
+    "source": "ALICE ESL Phonics P2 Page 04 - 09",
     "questionEn": "Which word has short vowel a?",
     "questionZh": "哪一個單字有短母音 a？",
     "speechText": "Which word has short vowel a?",
@@ -83,12 +84,12 @@ const P2_FISH_QUESTIONS = [
     ],
     "correct": "apple",
     "audioFallback": "P2_flashcards_audios/P2_apple.mp3",
-    "voiceType": "speech"
+    "theme": "Daily Activities, Beginning Sounds & Short Vowels"
   },
   {
     "id": "fish-qa-6",
     "type": "QA",
-    "source": "ALICE ESL Phonics P2 Page 04 - 10",
+    "source": "ALICE ESL Phonics P2 Page 04 - 09",
     "questionEn": "Which word has short vowel u?",
     "questionZh": "哪一個單字有短母音 u？",
     "speechText": "Which word has short vowel u?",
@@ -99,21 +100,10 @@ const P2_FISH_QUESTIONS = [
     ],
     "correct": "duck",
     "audioFallback": "P2_flashcards_audios/P2_duck.mp3",
-    "voiceType": "speech"
+    "theme": "Daily Activities, Beginning Sounds & Short Vowels"
   }
 ];
 
 if (typeof window !== "undefined") {
-  window.P1_FISH_QUESTIONS = P2_FISH_QUESTIONS;
-  window.P2_FISH_QUESTIONS = P2_FISH_QUESTIONS;
-  window.P1_QUESTIONS_DATA = P2_FISH_QUESTIONS;
-  window.P2_QUESTIONS_DATA = P2_FISH_QUESTIONS;
-}
-
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = {
-    P1_FISH_QUESTIONS: P2_FISH_QUESTIONS,
-    P2_FISH_QUESTIONS,
-    P1_QUESTIONS_DATA: P2_FISH_QUESTIONS
-  };
+  window.FISH_QUESTIONS = FISH_QUESTIONS;
 }
