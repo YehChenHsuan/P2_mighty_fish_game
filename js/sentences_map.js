@@ -1,4 +1,4 @@
-{
+window.SENTENCES_AUDIO_MAP = {
   "Can you brush your teeth?": "assets/audios/tts/fish_q_0_eeace529.mp3",
   "Yes, I can.": "assets/audios/tts/fish_opt_3b925184.mp3",
   "No, I can't.": "assets/audios/tts/fish_opt_5617396f.mp3",
@@ -21,4 +21,4 @@
   "Which word has short vowel u?": "assets/audios/tts/fish_q_5_48db1712.mp3",
   "duck": "assets/audios/tts/fish_opt_36846677.mp3",
   "dog": "assets/audios/tts/fish_opt_06d80eb0.mp3"
-}
+};
